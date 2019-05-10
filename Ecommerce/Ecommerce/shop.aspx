@@ -65,8 +65,8 @@
 							<ul class="nav navbar-nav">
 								<li><a href=""><i class="fa fa-user"></i> Account</a></li>
 								<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
-								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+								<li><a href="checkout.aspx"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a href="cart.aspx"><i class="fa fa-shopping-cart"></i> Cart</a></li>
 								<li><a href="login.aspx"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
@@ -92,21 +92,21 @@
 								<li><a href="Home.aspx">Home</a></li>
 								<li class="dropdown"><a href="#" class="active">Shop<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.html" class="active">Products</a></li>
-										<li><a href="product-details.html">Product Details</a></li> 
-										<li><a href="checkout.html">Checkout</a></li> 
-										<li><a href="cart.html">Cart</a></li> 
+                                        <li><a href="shop.aspx" class="active">Products</a></li>
+										<li><a href="product-details.aspx">Product Details</a></li> 
+										<li><a href="checkout.aspx">Checkout</a></li> 
+										<li><a href="cart.aspx">Cart</a></li> 
 										<li><a href="login.aspx">Login</a></li> 
                                     </ul>
                                 </li> 
 								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.html">Blog List</a></li>
-										<li><a href="blog-single.html">Blog Single</a></li>
+                                        <li><a href="blog.aspx">Blog List</a></li>
+										<li><a href="blog-single.aspx">Blog Single</a></li>
                                     </ul>
                                 </li> 
-								<li><a href="404.html">404</a></li>
-								<li><a href="contact-us.html">Contact</a></li>
+								<li><a href="404.aspx">404</a></li>
+								<li><a href="contact-us.aspx">Contact</a></li>
 							</ul>
 						</div>
 					</div>
