@@ -147,12 +147,20 @@
     <Content Include="Assets\js\jquery.scrollUp.min.js" />
     <Content Include="Assets\js\main.js" />
     <Content Include="Assets\js\price-range.js" />
+    <Content Include="checkout.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="shop.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
