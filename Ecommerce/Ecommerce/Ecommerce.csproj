@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.aspx" />
+    <Content Include="Admin\Login.aspx" />
     <Content Include="App_Data\Ecom.mdf" />
     <Content Include="App_Data\Ecom_log.ldf">
       <DependentUpon>Ecom.mdf</DependentUpon>
@@ -154,7 +155,6 @@
     <Content Include="checkout.aspx" />
     <Content Include="contact-us.aspx" />
     <Content Include="Home.aspx" />
-    <Content Include="Login.aspx" />
     <Content Include="product-details.aspx" />
     <Content Include="shop.aspx" />
     <Content Include="Web.config" />
@@ -173,6 +173,13 @@
     </Compile>
     <Compile Include="Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="blog-single.aspx.cs">
       <DependentUpon>blog-single.aspx</DependentUpon>
@@ -215,13 +222,6 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>

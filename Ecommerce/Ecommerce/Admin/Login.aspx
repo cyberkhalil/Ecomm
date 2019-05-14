@@ -1,9 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Ecommerce.Login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Ecommerce.Admin.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-	<section id="form"><!--form-->
+   <section id="form"><!--form-->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4 col-sm-offset-1">
@@ -16,7 +15,7 @@
 								<input type="checkbox" class="checkbox"> 
 								Keep me signed in
 							</span>
-                            <button id="loginBtn" type="submit" runat="server" class="btn btn-default" onserverclick="btnLogin_Click">Login</button>
+                            <button id="loginBtn" type="submit" runat="server" class="btn btn-default" onserverclick="btnLogin_Click" style="height: 26px; width: 49px">Login</button>
                              <!--
                                  .login-form form button, .signup-form form button
     //                      <button type="submit" class="btn btn-default">Login</button>

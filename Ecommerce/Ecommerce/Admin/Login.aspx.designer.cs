@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Ecommerce {
+namespace Ecommerce.Admin {
     
     
     public partial class Login {
