@@ -42,7 +42,10 @@
                   <asp:Button ID="ButtonLogin" runat="server" OnClick="ButtonLogin_Click" Text="تسجيل" Width="66px" CssClass="btn btn-default" />
 
 
-                        <!--/login form-->
+                             <asp:Label ID="LabelMessage" runat="server"></asp:Label>
+                             <br />
+                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
+                             <br />
 					</div><!--/login form-->
 				</div>
 				<div class="col-sm-1">
