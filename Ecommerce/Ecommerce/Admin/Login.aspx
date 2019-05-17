@@ -53,6 +53,7 @@
 				</div>
 				<div class="col-sm-4">
 					<div class="signup-form"><!--sign up form-->
+                        <!--TODO this design is gone  -->
 						<h2>New User Signup!</h2>
                         
                          <asp:TextBox ID="TextBox1f" runat="server" placeholder="UserName" Width="300px" Color="#696763" Font-Size="20px" margin-bottom="30px" ></asp:TextBox>

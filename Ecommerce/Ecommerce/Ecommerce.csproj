@@ -135,6 +135,7 @@
     <Content Include="Assets\images\product-details\similar1.jpg" />
     <Content Include="Assets\images\product-details\similar2.jpg" />
     <Content Include="Assets\images\product-details\similar3.jpg" />
+    <Content Include="Assets\images\products\whiteShose.jpg" />
     <Content Include="Assets\images\shop\advertisement.jpg" />
     <Content Include="Assets\images\shop\product10.jpg" />
     <Content Include="Assets\images\shop\product11.jpg" />

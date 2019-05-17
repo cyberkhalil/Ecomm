@@ -16,7 +16,7 @@ namespace Ecommerce.Admin
         }
         protected void ButtonSignup_Click(object sender, EventArgs e) {
 
-
+            //TODO make id seq
             SqlDataSource2.InsertCommand = "INSERT INTO [Users] ([Id],[Name],[Password],[phoneNumber],[Type],[Active]) VALUES ('" + "11" + "','" + TextBox1f.Text + "','" + TextBox1fpass.Text + "','" + TextBox2f2.Text + "','" + "user" + "','"+"1"+"')";          
             int rowsAffected = SqlDataSource2.Insert();
             LabelSignup.Text = "تم الإضافة بنجاح";
@@ -28,10 +28,11 @@ namespace Ecommerce.Admin
             LabelMessage.Text = "";
 
             DataView DV = (DataView)SqlDataSource1.Select(DataSourceSelectArguments.Empty);
+            //TODO make  if (Dv.Count() =="1") >>  المشكلة انه ما بيدخل غير اول قيمة في الجدول .
 
-            
 
-                if (TextBoxPassword.Text == DV.Table.Rows[0].ItemArray[2].ToString())
+
+            if (TextBoxPassword.Text == DV.Table.Rows[0].ItemArray[2].ToString())
                 {
 
                 if (DV.Table.Rows[0].ItemArray[5].ToString() == "1")

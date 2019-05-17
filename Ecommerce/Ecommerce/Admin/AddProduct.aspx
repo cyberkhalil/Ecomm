@@ -79,9 +79,33 @@
         <td class="auto-style6">
             &nbsp;</td>
         <td>
-            <asp:Button ID="submit" runat="server" Text="submit" CssClass="btn btn-primary" />
+            <asp:Button ID="submit" runat="server" Text="submit" CssClass="btn btn-primary" OnClick="submit_Click" />
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Products] WHERE [P_Id] = @P_Id" InsertCommand="INSERT INTO [Products] ([P_Id], [C_Id], [Name], [edate], [price], [pic], [details]) VALUES (@P_Id, @C_Id, @Name, @edate, @price, @pic, @details)" SelectCommand="SELECT * FROM [Products]" UpdateCommand="UPDATE [Products] SET [C_Id] = @C_Id, [Name] = @Name, [edate] = @edate, [price] = @price, [pic] = @pic, [details] = @details WHERE [P_Id] = @P_Id">
+                <DeleteParameters>
+                    <asp:Parameter Name="P_Id" Type="Int32" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="P_Id" Type="Int32" />
+                    <asp:Parameter Name="C_Id" Type="Int32" />
+                    <asp:Parameter Name="Name" Type="String" />
+                    <asp:Parameter Name="edate" Type="DateTime" />
+                    <asp:Parameter Name="price" Type="Decimal" />
+                    <asp:Parameter Name="pic" Type="String" />
+                    <asp:Parameter Name="details" Type="String" />
+                </InsertParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="C_Id" Type="Int32" />
+                    <asp:Parameter Name="Name" Type="String" />
+                    <asp:Parameter Name="edate" Type="DateTime" />
+                    <asp:Parameter Name="price" Type="Decimal" />
+                    <asp:Parameter Name="pic" Type="String" />
+                    <asp:Parameter Name="details" Type="String" />
+                    <asp:Parameter Name="P_Id" Type="Int32" />
+                </UpdateParameters>
+            </asp:SqlDataSource>
+            <br />
+<asp:Label ID="LabelinsertPro" runat="server"></asp:Label>
         </td>
     </tr>
 </table>
-<asp:Label ID="LabelinsertPro" runat="server"></asp:Label>
 </asp:Content>
