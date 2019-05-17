@@ -13,5 +13,17 @@ namespace Ecommerce.Admin
         {
 
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Calendar1.Visible = true;
+        }
+
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+            TextBoxCalender.Text = Calendar1.SelectedDate.ToString();
+            Calendar1.Visible = false;
+
+        }
     }
 }
