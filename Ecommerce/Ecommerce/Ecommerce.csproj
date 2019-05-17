@@ -70,6 +70,7 @@
     <Content Include="404.aspx" />
     <Content Include="Admin\AddProduct.aspx" />
     <Content Include="Admin\ControlPanel.aspx" />
+    <Content Include="Admin\EditAndAddCategories.aspx.aspx" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="App_Data\Ecom.mdf" />
     <Content Include="App_Data\Ecom_log.ldf">
@@ -190,6 +191,13 @@
     </Compile>
     <Compile Include="Admin\ControlPanel.aspx.designer.cs">
       <DependentUpon>ControlPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditAndAddCategories.aspx.aspx.cs">
+      <DependentUpon>EditAndAddCategories.aspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditAndAddCategories.aspx.aspx.designer.cs">
+      <DependentUpon>EditAndAddCategories.aspx.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
