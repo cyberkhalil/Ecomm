@@ -14,7 +14,14 @@ namespace Ecommerce.Admin
         {
 
         }
-        protected void ButtonSignup_Click(object sender, EventArgs e) { }
+        protected void ButtonSignup_Click(object sender, EventArgs e) {
+
+
+            SqlDataSource2.InsertCommand = "INSERT INTO [Users] ([Id],[Name],[Password],[phoneNumber],[Type],[Active]) VALUES ('" + "11" + "','" + TextBox1f.Text + "','" + TextBox1fpass.Text + "','" + TextBox2f2.Text + "','" + "user" + "','"+"1"+"')";          
+            int rowsAffected = SqlDataSource2.Insert();
+            LabelSignup.Text = "تم الإضافة بنجاح";
+
+        }
 
         protected void ButtonLogin_Click(object sender, EventArgs e)
         {
@@ -49,6 +56,11 @@ namespace Ecommerce.Admin
         }
 
         protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void TextBox1fpass_TextChanged(object sender, EventArgs e)
         {
 
         }

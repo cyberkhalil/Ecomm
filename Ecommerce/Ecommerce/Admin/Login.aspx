@@ -56,10 +56,34 @@
 						<h2>New User Signup!</h2>
                         
                          <asp:TextBox ID="TextBox1f" runat="server" placeholder="UserName" Width="300px" Color="#696763" Font-Size="20px" margin-bottom="30px" ></asp:TextBox>
-                         <asp:TextBox ID="TextBox2f2" runat="server" placeholder="Email"  Width="300px" Color="#696763" Font-Size="20px" margin-bottom="30px" ></asp:TextBox>
-                         <asp:TextBox ID="TextBox1fpass" runat="server" TextMode="Password" placeholder="Password"  Width="300px" Color="#696763" Font-Size="20px" margin-bottom="30px"></asp:TextBox>
+                         <asp:TextBox ID="TextBox2f2" runat="server" placeholder="phoneNumber"  Width="300px" Color="#696763" Font-Size="20px" margin-bottom="30px" ></asp:TextBox>
+                         <asp:TextBox ID="TextBox1fpass" runat="server" TextMode="Password" placeholder="Password"  Width="300px" Color="#696763" Font-Size="20px" margin-bottom="30px" OnTextChanged="TextBox1fpass_TextChanged"></asp:TextBox>
 
                           <asp:Button ID="Button1" runat="server" OnClick="ButtonSignup_Click" Text="تسجيل" Width="66px" CssClass="btn btn-default" />
+
+					    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Users] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Users] ([Id], [Name], [Password], [phoneNumber], [Type], [Active]) VALUES (@Id, @Name, @Password, @phoneNumber, @Type, @Active)" SelectCommand="SELECT * FROM [Users]" UpdateCommand="UPDATE [Users] SET [Name] = @Name, [Password] = @Password, [phoneNumber] = @phoneNumber, [Type] = @Type, [Active] = @Active WHERE [Id] = @Id">
+                            <DeleteParameters>
+                                <asp:Parameter Name="Id" Type="Int32" />
+                            </DeleteParameters>
+                            <InsertParameters>
+                                <asp:Parameter Name="Id" Type="Int32" />
+                                <asp:Parameter Name="Name" Type="String" />
+                                <asp:Parameter Name="Password" Type="String" />
+                                <asp:Parameter Name="phoneNumber" Type="String" />
+                                <asp:Parameter Name="Type" Type="String" />
+                                <asp:Parameter Name="Active" Type="String" />
+                            </InsertParameters>
+                            <UpdateParameters>
+                                <asp:Parameter Name="Name" Type="String" />
+                                <asp:Parameter Name="Password" Type="String" />
+                                <asp:Parameter Name="phoneNumber" Type="String" />
+                                <asp:Parameter Name="Type" Type="String" />
+                                <asp:Parameter Name="Active" Type="String" />
+                                <asp:Parameter Name="Id" Type="Int32" />
+                            </UpdateParameters>
+                        </asp:SqlDataSource>
+                        <asp:Label ID="LabelSignup" runat="server"></asp:Label>
+                        <br />
 
 					</div><!--/sign up form-->
 				</div>
