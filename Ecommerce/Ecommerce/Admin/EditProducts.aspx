@@ -33,8 +33,9 @@
                         <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
                         <asp:BoundField DataField="edate" DataFormatString="{0:d}" HeaderText="edate" SortExpression="edate" />
                         <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
-                        <asp:BoundField DataField="details" DataFormatString="{0:c}" HeaderText="details" SortExpression="details" />
+                        <asp:BoundField DataField="details" DataFormatString="{0:c}" HeaderText="details" SortExpression="details" HtmlEncode="False" />
                         <asp:ImageField DataImageUrlField="pic" DataImageUrlFormatString="~\Assets\images\products\{0}" HeaderText="photo">
+                            <ControlStyle Height="150px" Width="170px" />
                         </asp:ImageField>
                     </Columns>
                     <EditRowStyle BackColor="#999999" />
