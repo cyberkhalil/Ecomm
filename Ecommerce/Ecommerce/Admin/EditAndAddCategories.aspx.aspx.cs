@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Ecommerce.Admin
 {
@@ -18,7 +13,7 @@ namespace Ecommerce.Admin
         {
             SqlDataSource1.InsertCommand = "INSERT INTO [Categories] ([C_Id], [C_Name]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "')";
             int rowsAffected = SqlDataSource1.Insert();
-            LabelMessage.Text="add is suc";
+            LabelMessage.Text = "add is suc";
         }
     }
 }

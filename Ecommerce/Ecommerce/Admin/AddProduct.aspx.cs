@@ -28,11 +28,92 @@ namespace Ecommerce.Admin
 
         protected void submit_Click(object sender, EventArgs e)
         {//E:\oracle project\WebProject\Ecommerce\Ecommerce\Assets\images\products\whiteShose.jpg
-            SqlDataSource1.InsertCommand = "INSERT INTO [Products] ([P_Id],[C_Id],[Name],[pic],[details]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + "whiteShose.jpg" + "','" + TextBox5.Text + "')";
-            //  SqlDataSource1.InsertCommand = "INSERT INTO [Products] ([P_Id],[C_Id],[Name],[edate],[pic],[details]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBoxCalender.Text + "','" + "whiteShose.jpg" + "','"+TextBox5.Text+ "')";
+         //SqlDataSource1.InsertCommand = "INSERT INTO [Products] ([P_Id],[C_Id],[Name],[pic],[details]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + "whiteShose.jpg" + "','" + TextBox5.Text + "')";
+            SqlDataSource1.InsertCommand = "INSERT INTO [Products] ([P_Id],[C_Id],[Name],[edate],[pic],[details]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + DateTime.Parse(TextBoxCalender.Text) + "','" + "whiteShose.jpg" + "','" + TextBox5.Text + "')";
             int rowsAffected2 = SqlDataSource1.Insert();
             LabelinsertPro.Text = "suc ";
             //TODO add Pic upload file> and Date formate 
+            //TODO add Pic upload file> and Date formate 
+            string strRealPath;
+            strRealPath = Request.PhysicalApplicationPath;
+            strRealPath += "Assets\\images\\products\\";
+            // file upload
+            /* if (FileUpload1.HasFile)
+             {
+                 if (System.IO.Directory.Exists(strRealPath))
+                 {
+                     if (!System.IO.File.Exists(strRealPath + FileUpload1.FileName))
+                     {
+                         if (FileUpload1.PostedFile.ContentLength < 15000)
+                         {
+                             FileUpload1.SaveAs(strRealPath + FileUpload1.FileName);
+
+                             SqlDataSource1.InsertParameters.Add("pic", FileUpload1.FileName.ToString());
+
+                             int rowsAffected = SqlDataSource1.Insert();
+
+                             LabelinsertPro.Text = "تم الإضافة بنجاح";
+                         }
+                         else
+                         {
+                             LabelinsertPro.Text = "حجم الملف أكبر من 15000";
+                         }
+                     }
+                     else
+                     {
+                         LabelinsertPro.Text = "هذا الملف موجود حاول تغيير إسم الملف";
+                     }
+                 }
+                 else
+                 {
+                     LabelinsertPro.Text = "المجلد الذي سيحمل فيه الملفات غير موجود على الخادم";
+                 }
+             }
+             else
+             {
+                 LabelinsertPro.Text = "إختر ملف لرفعه";
+             }
+
+             LabelinsertPro.Text = "<font color=red><B>" + LabelinsertPro.Text + "</B></font>";
+
+             if (FileUpload1.HasFile)
+             {
+                 if (System.IO.Directory.Exists(strRealPath))
+                 {
+                     if (!System.IO.File.Exists(strRealPath + FileUpload1.FileName))
+                     {
+                         if (FileUpload1.PostedFile.ContentLength < 15000)
+                         {
+                             FileUpload1.SaveAs(strRealPath + FileUpload1.FileName);
+
+                             SqlDataSource1.InsertParameters.Add("pic", FileUpload1.FileName.ToString());
+
+                             int rowsAffected = SqlDataSource1.Insert();
+
+                             LabelinsertPro.Text = "تم الإضافة بنجاح";
+                         }
+                         else
+                         {
+                             LabelinsertPro.Text = "حجم الملف أكبر من 15000";
+                         }
+                     }
+                     else
+                     {
+                         LabelinsertPro.Text = "هذا الملف موجود حاول تغيير إسم الملف";
+                     }
+                 }
+                 else
+                 {
+                     LabelinsertPro.Text = "المجلد الذي سيحمل فيه الملفات غير موجود على الخادم";
+                 }
+             }
+             else
+             {
+                 LabelinsertPro.Text = "إختر ملف لرفعه";
+             }
+
+             LabelinsertPro.Text = "<font color=red><B>" + LabelinsertPro.Text + "</B></font>";
+             */
         }
     }
 }
