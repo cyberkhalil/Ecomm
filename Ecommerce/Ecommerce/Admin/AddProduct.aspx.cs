@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Ecommerce.Admin
 {
@@ -27,8 +22,8 @@ namespace Ecommerce.Admin
         }
 
         protected void submit_Click(object sender, EventArgs e)
-        {//E:\oracle project\WebProject\Ecommerce\Ecommerce\Assets\images\products\whiteShose.jpg
-         //SqlDataSource1.InsertCommand = "INSERT INTO [Products] ([P_Id],[C_Id],[Name],[pic],[details]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + "whiteShose.jpg" + "','" + TextBox5.Text + "')";
+        {
+            // TODO maybe timedate instead of time & calender should be shown with hours and mins
             SqlDataSource1.InsertCommand = "INSERT INTO [Products] ([P_Id],[C_Id],[Name],[edate],[pic],[details]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + DateTime.Parse(TextBoxCalender.Text) + "','" + "whiteShose.jpg" + "','" + TextBox5.Text + "')";
             int rowsAffected2 = SqlDataSource1.Insert();
             LabelinsertPro.Text = "suc ";

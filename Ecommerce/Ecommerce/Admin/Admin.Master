@@ -119,10 +119,12 @@
                             Add Categories<br />
                             Edit Product
                        
+                       
                         </asp:View>
 
                         <asp:View ID="View2" runat="server">
                             UserView
+                       
                        
                         </asp:View>
                     </asp:MultiView>
