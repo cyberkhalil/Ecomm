@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
-     <link href="../Assets/css/animate.css" rel="stylesheet" />
+    <link href="../Assets/css/animate.css" rel="stylesheet" />
     <link href="../Assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../Assets/css/font-awesome.min.css" rel="stylesheet" />
     <link href="../Assets/css/main.css" rel="stylesheet" />
@@ -21,7 +21,7 @@
     <script src="../Assets/js/jquery.scrollUp.min.js"></script>
     <script src="../Assets/js/main.js"></script>
     <script src="../Assets/js/price-range.js"></script>
-       <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
@@ -30,98 +30,106 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
-
         .auto-style4 {
             font-size: small;
         }
+
         .auto-style5 {
             width: 214px;
         }
-        </style>
+    </style>
 </head>
 <body>
-        <header id="header"><!--header-->
-		<div class="header_top"><!--header_top-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="contactinfo">
-							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="social-icons pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header_top-->
+    <header id="header">
+        <!--header-->
+        <div class="header_top">
+            <!--header_top-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactinfo">
+                            <ul class="nav nav-pills">
+                                <li><a href="#"><i class="fa fa-phone"></i>+2 95 01 88 821</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i>info@domain.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="social-icons pull-right">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/header_top-->
 
-            
-		<div class="header-middle"><!--header-middle-->
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 clearfix">
-						<div class="logo pull-left">
-							<a href="Home.aspx"><img src="Assets/images/home/logo.png" alt="" /></a>
-						</div>
-						<div class="btn-group pull-right clearfix">
-							<div class="btn-group">
-								
-							
-							
-						
-								
-							</div>
-						</div>
-					</div>
-					<div class="col-md-8 clearfix">
-						<div class="shop-menu clearfix pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href=""><i class="fa fa-user"></i> Account</a></li>
-								<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
-								<li><a href="checkout.aspx"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-								<li><a href="cart.aspx"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="login.aspx"><i class="fa fa-lock"></i> Logout</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-middle-->
+
+    <div class="header-middle">
+        <!--header-middle-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 clearfix">
+                    <div class="logo pull-left">
+                        <a href="Home.aspx">
+                            <img src="/Assets/images/home/logo.png" alt="" /></a>
+                    </div>
+                    <div class="btn-group pull-right clearfix">
+                        <div class="btn-group">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 clearfix">
+                    <div class="shop-menu clearfix pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href=""><i class="fa fa-user"></i>Account</a></li>
+                            <li><a href=""><i class="fa fa-star"></i>Wishlist</a></li>
+                            <li><a href="checkout.aspx"><i class="fa fa-crosshairs"></i>Checkout</a></li>
+                            <li><a href="cart.aspx"><i class="fa fa-shopping-cart"></i>Cart</a></li>
+                            <li><a href="login.aspx"><i class="fa fa-lock"></i>Logout</a></li>
+                            <!-- TODO delete cookies -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/header-middle-->
 
     <form id="form1" runat="server">
         <table class="nav-justified">
             <tr>
                 <td colspan="2"><strong><span class="auto-style4">you are login with</span></strong><span class="auto-style4"><strong> </strong></span><strong>
                     <asp:Label ID="LabelUser" runat="server" CssClass="auto-style4"></asp:Label>
-&nbsp;</strong></td>
+                    &nbsp;</strong></td>
             </tr>
             <tr>
                 <td class="auto-style5">
                     <asp:MultiView ID="MultiView1" runat="server">
                         <asp:View ID="View1" runat="server">
-                            <a href="AddProduct.aspx">Add Product</a><br /> Edit User<br /> Add Categories<br /> Edit Product
+                            <a href="AddProduct.aspx">Add Product</a><br />
+                            Edit User<br />
+                            Add Categories<br />
+                            Edit Product
+                       
                         </asp:View>
 
-                         <asp:View ID="View2" runat="server">
-                             UserView
+                        <asp:View ID="View2" runat="server">
+                            UserView
+                       
                         </asp:View>
                     </asp:MultiView>
                 </td>
                 <td>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
                 </td>
             </tr>
             <tr>
