@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Ecommerce {
-    
-    
-    public partial class MasterPage {
-        
+namespace Ecommerce
+{
+
+
+    public partial class MasterPage
+    {
+
         /// <summary>
         /// head control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Ecommerce {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-        
+
         /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
