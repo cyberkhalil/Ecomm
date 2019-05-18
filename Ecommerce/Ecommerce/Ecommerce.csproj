@@ -74,6 +74,7 @@
     <Content Include="Admin\EditProducts.aspx" />
     <Content Include="Admin\EditUser.aspx" />
     <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\Orders.aspx" />
     <Content Include="App_Data\Ecom.mdf" />
     <Content Include="App_Data\Ecom_log.ldf">
       <DependentUpon>Ecom.mdf</DependentUpon>
@@ -221,6 +222,13 @@
     </Compile>
     <Compile Include="Admin\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
     </Compile>
     <Compile Include="blog-single.aspx.cs">
       <DependentUpon>blog-single.aspx</DependentUpon>

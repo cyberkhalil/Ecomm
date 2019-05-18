@@ -49,7 +49,7 @@
         <tr>
             <td class="auto-style11">
                 <div class="text-right">
-                    <asp:Button ID="Button1" runat="server" CssClass="btn-primary active" OnClick="Button1_Click" Text="submit" />
+                    <asp:Button ID="Button1" runat="server" CssClass="btn-primary disabled active" OnClick="Button1_Click" Text="submit" />
                    
                     <!-- TODO   اعمل خيار انه ما يتفعل الزر الا لما ينضغط عليه بس ..  -->
                     <br />

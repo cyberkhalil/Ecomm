@@ -115,7 +115,7 @@
                     <asp:MultiView ID="MultiView1" runat="server">
                         <asp:View ID="View1" runat="server">
                             <a href="AddProduct.aspx">Add Product</a><br />
-                            Edit User<br />
+                            <a href="EditUser.aspx">Edit User</a><br />
                             <a href="EditAndAddCategories.aspx.aspx">Add and Edit Categories</a><br />
                             <a href="EditProducts.aspx">Edit&nbsp; Product</a>
                        
