@@ -116,8 +116,8 @@
                         <asp:View ID="View1" runat="server">
                             <a href="AddProduct.aspx">Add Product</a><br />
                             Edit User<br />
-                            Add Categories<br />
-                            Edit Product
+                            <a href="EditAndAddCategories.aspx.aspx">Add and Edit Categories</a><br />
+                            <a href="EditProducts.aspx">Edit&nbsp; Product</a>
                        
                        
                         </asp:View>
