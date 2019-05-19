@@ -1,0 +1,15 @@
+TODO's :-
+* fix login button in master page.
+* fix file upload on AddProduct.
+* Login.response.redirectByUserType();
+* Registration style in login page.
+* replace images.
+* remove 404 page from master.
+* add DB table for ad's.
+* implement addAd's page.
+* add AD's with images and so ...
+* distribute the ad's.
+* checkout
+* Delete Card Page . and Card btn; 
+* create Accountpage & Home.AccountsBtn.response.redirectByUserType();
+* edit web.config. (last thing)
