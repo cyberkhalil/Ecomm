@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="EditAndAddCategories.aspx.aspx.cs" Inherits="Ecommerce.Admin.EditAndAddCategories_aspx" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="EditAndAddCategories.aspx.cs" Inherits="Ecommerce.Admin.EditAndAddCategories_aspx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style6 {
@@ -88,7 +88,7 @@
                 <br />
                 <br />
                 Search Category
-                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox3" runat="server" AutoPostBack="True" Height="23px" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
                 <br />
                 <br />
                 <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="10" DataKeyNames="C_Id" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" PageSize="4">

@@ -15,5 +15,10 @@ namespace Ecommerce.Admin
             int rowsAffected = SqlDataSource1.Insert();
             LabelMessage.Text = "add is suc";
         }
+
+        protected void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

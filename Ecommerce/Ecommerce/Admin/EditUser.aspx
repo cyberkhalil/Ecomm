@@ -18,7 +18,7 @@
         <td class="auto-style6"><strong>
                 <asp:Label ID="Label3" runat="server" BorderColor="#000099" CssClass="auto-style7" ForeColor="#000099" Text="Search for User   " style="font-size: small"></asp:Label>
                 </strong>
-            <asp:TextBox ID="TextBox1" runat="server" BorderColor="White" BorderStyle="Solid"  placeholder="search"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" BorderColor="White" BorderStyle="Solid"  placeholder="search" AutoPostBack="True"></asp:TextBox>
             <br />
         </td>
         <td class="auto-style6"></td>

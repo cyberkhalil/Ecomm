@@ -44,7 +44,12 @@
 
                              <asp:Label ID="LabelMessage" runat="server"></asp:Label>
                              <br />
-                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
+                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Users] WHERE (([Name] = @Name) AND ([Password] = @Password))">
+                                 <SelectParameters>
+                                     <asp:ControlParameter ControlID="TextBoxUserName" Name="Name" PropertyName="Text" Type="String" />
+                                     <asp:ControlParameter ControlID="TextBoxPassword" Name="Password" PropertyName="Text" Type="String" />
+                                 </SelectParameters>
+                             </asp:SqlDataSource>
                              <br />
 					</div><!--/login form-->
 				</div>

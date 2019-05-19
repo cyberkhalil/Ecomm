@@ -30,13 +30,9 @@ namespace Ecommerce.Admin
             DataView DV = (DataView)SqlDataSource1.Select(DataSourceSelectArguments.Empty);
             //TODO make  if (Dv.Count() =="1") >>  المشكلة انه ما بيدخل غير اول قيمة في الجدول .
 
+            if (DV.Count > 0) { 
 
-
-            if (TextBoxPassword.Text == DV.Table.Rows[0].ItemArray[2].ToString())
-                {
-
-                if (DV.Table.Rows[0].ItemArray[5].ToString() == "1")
-                {
+            
                     Session.Add("UserName", TextBoxUserName.Text);
                     Session.Add("UserType", DV.Table.Rows[0].ItemArray[4].ToString());
 
@@ -47,15 +43,12 @@ namespace Ecommerce.Admin
                     }
                     Response.Redirect("AddProduct.aspx");
                 }
-                else
-                    LabelMessage.Text = "هذا الحساب غير مفعل";
+            else  
+                    LabelMessage.Text = "كلمة المرور او المستخدم خطأ";
 
             }
-                else
-                    LabelMessage.Text = "كلمة المرور غير صحيحة";
-           
-        }
 
+        
         protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
 

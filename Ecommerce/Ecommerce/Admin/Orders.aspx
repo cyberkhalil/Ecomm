@@ -22,7 +22,7 @@
         <tr>
             <td><strong>
                 <asp:Label ID="Label3" runat="server" BorderColor="#000099" CssClass="auto-style7" ForeColor="#000099" Text="Search for User   " style="font-size: small"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server" BorderColor="White" BorderStyle="Solid"  placeholder="search"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" BorderColor="White" BorderStyle="Solid"  placeholder="search" AutoPostBack="True"></asp:TextBox>
                 </strong>
             </td>
             <td>&nbsp;</td>
@@ -77,8 +77,8 @@
                         <asp:BoundField DataField="O_Id" HeaderText="O_Id" ReadOnly="True" SortExpression="O_Id" Visible="False" />
                         <asp:BoundField DataField="P_Name" HeaderText="Product Name" SortExpression="P_Name" />
                         <asp:BoundField DataField="User_Name" HeaderText="User Name" SortExpression="User_Name" />
-                        <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
                         <asp:BoundField DataField="countOfProduct" HeaderText="Quantity" SortExpression="countOfProduct" />
+                        <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
                     </Columns>
                     <EditRowStyle BackColor="#999999" />
                     <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
