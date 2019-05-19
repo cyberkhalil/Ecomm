@@ -1,6 +1,8 @@
 TODO's :-
 * fix login button in master page.
 * fix file upload on AddProduct.
+* controll panel
+* add user name for Admin.Master message ("Hello user ..")
 * Login.response.redirectByUserType();
 * Registration style in login page.
 * replace images.
@@ -10,6 +12,8 @@ TODO's :-
 * add AD's with images and so ...
 * distribute the ad's.
 * checkout
-* Delete Card Page . and Card btn; 
+* Delete Cart Page and Cart btn;
 * create Accountpage & Home.AccountsBtn.response.redirectByUserType();
+* wish list table.
+* checkout products table & save in it the add to chart products.
 * edit web.config. (last thing)

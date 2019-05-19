@@ -6,9 +6,9 @@ namespace Ecommerce.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserName"] == null) {
+            if (Session["UserName"] == null || Session["UserType"].Equals("user"))
+            {
                 Response.Redirect("Login.aspx");
-
             }
         }
     }
