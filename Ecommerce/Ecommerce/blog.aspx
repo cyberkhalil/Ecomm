@@ -65,7 +65,7 @@
 								<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
 								<li><a href="checkout.aspx"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 								<li><a href="cart.aspx"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="login.aspx"><i class="fa fa-lock"></i> Login</a></li>
+								<li><a href="../Admin/login.aspx"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
 					</div>
@@ -94,7 +94,7 @@
 										<li><a href="product-details.aspx">Product Details</a></li> 
 										<li><a href="checkout.aspx">Checkout</a></li> 
 										<li><a href="cart.aspx">Cart</a></li> 
-										<li><a href="login.aspx">Login</a></li> 
+										<li><a href="../Admin/login.aspx">Login</a></li> 
                                     </ul>
                                 </li> 
 								<li class="dropdown"><a href="#" class="active">Blog<i class="fa fa-angle-down"></i></a>
