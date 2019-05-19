@@ -1,5 +1,4 @@
 TODO's :-
-* fix login button in master page. 
 * fix file upload on AddProduct.
 * controll panel
 * add user name for Admin.Master message ("Hello user ..")

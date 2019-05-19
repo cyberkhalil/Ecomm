@@ -12,6 +12,7 @@ namespace Ecommerce.Admin
         protected void Button2_Click(object sender, EventArgs e)
         {
             //TODO make هديك الي ما بتتفعل الا لما تضغط  ع الزر 
+            //Done !!
             Calendar1.Visible = !Calendar1.Visible;
         }
 
@@ -28,8 +29,9 @@ namespace Ecommerce.Admin
             SqlDataSource1.InsertCommand = "INSERT INTO [Products] ([P_Id],[C_Id],[Name],[edate],[pic],[details]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + DateTime.Parse(TextBoxCalender.Text) + "','" + "whiteShose.jpg" + "','" + TextBox5.Text + "')";
             int rowsAffected2 = SqlDataSource1.Insert();
             LabelinsertPro.Text = "suc ";
-             
-            //TODO add Pic upload file> and Date formate 
+        }
+        /*
+         * //TODO add Pic upload file> and Date formate 
             string strRealPath;
             strRealPath = Request.PhysicalApplicationPath;
             strRealPath += "Assets\\images\\products\\";
@@ -110,5 +112,6 @@ namespace Ecommerce.Admin
 
             LabelinsertPro.Text = "<font color=red><B>" + LabelinsertPro.Text + "</B></font>";
         }
+         */
     }
 }
