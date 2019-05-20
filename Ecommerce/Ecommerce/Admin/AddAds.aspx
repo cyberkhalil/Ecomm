@@ -30,7 +30,7 @@
         <tr>
             <td class="auto-style8">Details</td>
             <td class="auto-style8">
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Height="61px" TextMode="MultiLine" Width="342px"></asp:TextBox>
             </td>
         </tr>
         <tr>
