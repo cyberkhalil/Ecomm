@@ -84,16 +84,16 @@
             <tr>
                 <td colspan="2"><strong><span class="auto-style4">you are login with</span></strong><span class="auto-style4"><strong> </strong></span><strong>
                     <asp:Label ID="LabelUser" runat="server" CssClass="auto-style4"></asp:Label>
-                    &nbsp;</strong></td>
+                    &nbsp;<br />
+                    <br />
+                    </strong></td>
             </tr>
             <tr>
                 <td class="auto-style5">
                     <asp:MultiView ID="MultiView1" runat="server">
                         <asp:View ID="View1" runat="server">
-                            <a href="AddProduct.aspx">Add Product</a><br />
-                            <a href="EditUser.aspx">Edit User</a><br />
-                            <a href="EditAndAddCategories.aspx.aspx">Add and Edit Categories</a><br />
-                            <a href="EditProducts.aspx">Edit&nbsp; Product</a>
+                            <div class="text-left">
+                                <a href="AddProduct.aspx">Add Product</a><br /> <a href="EditUser.aspx">Edit User</a><br /> <a href="EditAndAddCategories.aspx.aspx">Add and Edit Categories</a><br /> <a href="EditProducts.aspx">Edit&nbsp; Product</a></div>
                         </asp:View>
                     </asp:MultiView>
                 </td>
