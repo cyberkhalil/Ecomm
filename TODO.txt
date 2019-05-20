@@ -4,8 +4,6 @@ TODO's :-
 * add user name for Admin.Master message ("Hello user ..")
 * Registration style in login page.
 * replace images.
-* remove 404 page from master.
-* add DB table for ad's.
 * implement addAd's page.
 * add AD's with images and so ...
 * distribute the ad's.
