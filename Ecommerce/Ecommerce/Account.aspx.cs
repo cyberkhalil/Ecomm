@@ -17,7 +17,7 @@ namespace Ecommerce
         protected void Button1_Click(object sender, EventArgs e)
         {
             //TODO solve problem
-           SqlDataSource1.UpdateCommand = "UPDATE [Users] SET [Name]="
+          /* SqlDataSource1.UpdateCommand = "UPDATE [Users] SET [Name]="
                 + TextBox1.Text +
                 ", [phoneNumber] ='" + TextBox2.Text + "',[Password] ='" +
                 TextBox3.Text + "' where [Name]=" + Session["UserName"].ToString();
@@ -27,7 +27,12 @@ namespace Ecommerce
             }
             catch (Exception Ex) {
                 Label2.Text = Ex.Message;
-            }
+            }*/
+
+        }
+
+        protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
+        {
 
         }
     }
