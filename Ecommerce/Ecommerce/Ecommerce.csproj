@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.aspx" />
+    <Content Include="Account.aspx" />
     <Content Include="Admin\AddAds.aspx" />
     <Content Include="Admin\AddProduct.aspx" />
     <Content Include="Admin\ControlPanel.aspx" />
@@ -152,6 +153,13 @@
     </Compile>
     <Compile Include="404.aspx.designer.cs">
       <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\AddAds.aspx.cs">
       <DependentUpon>AddAds.aspx</DependentUpon>

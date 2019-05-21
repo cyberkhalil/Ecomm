@@ -8,6 +8,6 @@ TODO's :-
 * checkout
 * Delete Cart Page and Cart btn;
 * create Accountpage & Home.AccountsBtn.response.redirectByUserType();
-* wish list table.
+
 * checkout products table & save in it the add to chart products.
 * edit web.config. (last thing)

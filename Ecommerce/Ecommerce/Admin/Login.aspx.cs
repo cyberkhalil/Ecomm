@@ -29,6 +29,7 @@ namespace Ecommerce.Admin
             if (DV.Count > 0)
             {
                 Session.Add("UserName", TextBoxUserName.Text);
+
                 Session.Add("UserType", DV.Table.Rows[0].ItemArray[4].ToString());
 
                 if (CheckBoxLogin.Checked == true)
