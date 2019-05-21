@@ -29,13 +29,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="nav-justified">
         <tr>
-            <td class="auto-style6">[P_Id]</td>
+            <td class="auto-style6">Product Id</td>
             <td>
                 <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td class="auto-style7">[C_Id]</td>
+            <td class="auto-style7">Category Id</td>
             <td class="auto-style8">
                 <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             </td>
@@ -83,7 +83,7 @@
         <tr>
             <td class="auto-style6">&nbsp;</td>
             <td>
-                <asp:Button ID="submit" runat="server" Text="submit" CssClass="btn btn-primary" OnClick="submit_Click" />
+                <asp:Button ID="submit" runat="server" Text="submit" CssClass="btn btn-primary" OnClick="Submit_Click" />
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Products] WHERE [P_Id] = @P_Id" InsertCommand="INSERT INTO [Products] ([P_Id], [C_Id], [Name], [edate], [price], [pic], [details]) VALUES (@P_Id, @C_Id, @Name, @edate, @price, @pic, @details)" SelectCommand="SELECT * FROM [Products]" UpdateCommand="UPDATE [Products] SET [C_Id] = @C_Id, [Name] = @Name, [edate] = @edate, [price] = @price, [pic] = @pic, [details] = @details WHERE [P_Id] = @P_Id">
                     <DeleteParameters>
                         <asp:Parameter Name="P_Id" Type="Int32" />
@@ -108,7 +108,7 @@
                     </UpdateParameters>
                 </asp:SqlDataSource>
                 <br />
-                <asp:Label ID="LabelinsertPro" runat="server"></asp:Label>
+                <asp:Label ID="LabelinsertPro" runat="server" Font-Bold="True" ForeColor="Red"></asp:Label>
             </td>
         </tr>
     </table>

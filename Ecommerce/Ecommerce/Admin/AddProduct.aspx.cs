@@ -11,8 +11,6 @@ namespace Ecommerce.Admin
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            //TODO make هديك الي ما بتتفعل الا لما تضغط  ع الزر 
-            //Done !!
             Calendar1.Visible = !Calendar1.Visible;
         }
 
@@ -23,95 +21,45 @@ namespace Ecommerce.Admin
 
         }
 
-        protected void submit_Click(object sender, EventArgs e)
+        protected void Submit_Click(object sender, EventArgs e)
         {
             // TODO maybe timedate instead of time & calender should be shown with hours and mins
-            SqlDataSource1.InsertCommand = "INSERT INTO [Products] ([P_Id],[C_Id],[Name],[edate],[pic],[details]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + DateTime.Parse(TextBoxCalender.Text) + "','" + "whiteShose.jpg" + "','" + TextBox5.Text + "')";
-            int rowsAffected2 = SqlDataSource1.Insert();
-            LabelinsertPro.Text = "suc ";
-        }
-        /*
-         * //TODO add Pic upload file> and Date formate 
-            string strRealPath;
-            strRealPath = Request.PhysicalApplicationPath;
-            strRealPath += "Assets\\images\\products\\";
-            // file upload
-            if (FileUpload1.HasFile)
-            {
-                if (System.IO.Directory.Exists(strRealPath))
-                {
-                    if (!System.IO.File.Exists(strRealPath + FileUpload1.FileName))
-                    {
-                        if (FileUpload1.PostedFile.ContentLength < 15000)
-                        {
-                            FileUpload1.SaveAs(strRealPath + FileUpload1.FileName);
 
-                            SqlDataSource1.InsertParameters.Add("pic", FileUpload1.FileName.ToString());
-
-                            int rowsAffected = SqlDataSource1.Insert();
-
-                            LabelinsertPro.Text = "تم الإضافة بنجاح";
-                        }
-                        else
-                        {
-                            LabelinsertPro.Text = "حجم الملف أكبر من 15000";
-                        }
-                    }
-                    else
-                    {
-                        LabelinsertPro.Text = "هذا الملف موجود حاول تغيير إسم الملف";
-                    }
-                }
-                else
-                {
-                    LabelinsertPro.Text = "المجلد الذي سيحمل فيه الملفات غير موجود على الخادم";
-                }
-            }
-            else
+            if (!FileUpload1.HasFile)
             {
                 LabelinsertPro.Text = "إختر ملف لرفعه";
+                return;
             }
 
-            LabelinsertPro.Text = "<font color=red><B>" + LabelinsertPro.Text + "</B></font>";
+            string strRealPath = Request.PhysicalApplicationPath + "Assets\\images\\products\\";
 
-            if (FileUpload1.HasFile)
+            if (!System.IO.Directory.Exists(strRealPath))
             {
-                if (System.IO.Directory.Exists(strRealPath))
-                {
-                    if (!System.IO.File.Exists(strRealPath + FileUpload1.FileName))
-                    {
-                        if (FileUpload1.PostedFile.ContentLength < 15000)
-                        {
-                            FileUpload1.SaveAs(strRealPath + FileUpload1.FileName);
-
-                            SqlDataSource1.InsertParameters.Add("pic", FileUpload1.FileName.ToString());
-
-                            int rowsAffected = SqlDataSource1.Insert();
-
-                            LabelinsertPro.Text = "تم الإضافة بنجاح";
-                        }
-                        else
-                        {
-                            LabelinsertPro.Text = "حجم الملف أكبر من 15000";
-                        }
-                    }
-                    else
-                    {
-                        LabelinsertPro.Text = "هذا الملف موجود حاول تغيير إسم الملف";
-                    }
-                }
-                else
-                {
-                    LabelinsertPro.Text = "المجلد الذي سيحمل فيه الملفات غير موجود على الخادم";
-                }
+                LabelinsertPro.Text = "المجلد الذي سيحمل فيه الملفات غير موجود على الخادم";
+                return;
             }
-            else
+            if (System.IO.File.Exists(strRealPath + FileUpload1.FileName))
             {
-                LabelinsertPro.Text = "إختر ملف لرفعه";
+                LabelinsertPro.Text = "هذا الملف موجود حاول تغيير إسم الملف";
+            }
+            if (FileUpload1.PostedFile.ContentLength >= 15000)
+            {
+                LabelinsertPro.Text = "اختر صورة بحجم أصغر";
             }
 
-            LabelinsertPro.Text = "<font color=red><B>" + LabelinsertPro.Text + "</B></font>";
+            string ProductImgFile = strRealPath + FileUpload1.FileName;
+            FileUpload1.SaveAs(strRealPath + FileUpload1.FileName);
+
+            SqlDataSource1.InsertCommand = "INSERT INTO [Products] ([P_Id],[C_Id],[Name],[edate],[pic],[details]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + DateTime.Parse(TextBoxCalender.Text) + "','" + ProductImgFile + "','" + TextBox5.Text + "')";
+            try
+            {
+                int rowsAffected1 = SqlDataSource1.Insert();
+                LabelinsertPro.Text = "تم الإضافة بنجاح";
+            }
+            catch (Exception ex)
+            {
+                LabelinsertPro.Text = ex.Message;
+            }
         }
-         */
     }
 }
