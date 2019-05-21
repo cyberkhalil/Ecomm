@@ -92,7 +92,7 @@
                     <asp:MultiView ID="MultiView1" runat="server">
                         <asp:View ID="View1" runat="server">
                             <div class="text-left">
-                                <a href="AddProduct.aspx">Add Product</a><br /><a href="EditProducts.aspx">Edit&nbsp; Product</a><br /> <a href="EditUser.aspx">Edit User</a><br /> <a href="EditAndAddCategories.aspx.aspx">Add and Edit Categories</a><br /></div>
+                                <a href="AddProduct.aspx">Add Product</a><br /><a href="EditProducts.aspx">Edit&nbsp; Product</a><br /> <a href="EditUser.aspx">Edit User</a><br /> <a href="EditAndAddCategories.aspx.aspx">Add and Edit Categories</a><br /> <a href="AddAds.aspx">Add Ads</a><br /></div>
                         </asp:View>
                     </asp:MultiView>
                     </td>

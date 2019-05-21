@@ -29,13 +29,16 @@ namespace Ecommerce.Admin
                 " ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + DateTime.Parse(TextBoxCalender.Text) + "','" + "whiteShose.jpg" + "')";
           */
             SqlDataSource1.InsertCommand =
-                 "INSERT INTO[Ads] ([Id_ads],[details_ads],[pic_ads])" +
+                 "INSERT INTO[Ads] ([Id_ads],[details_ads],[pic_ads],[Name_ads])" +
                  " VALUES" +
-                 " ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + "whiteShose.jpg" + "')";
+                 " ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + "whiteShose.jpg" + "' ,'" + TextBox3.Text + "')";
             // TODO  upload file   and format Calender date
-
-            int rowsAffected2 = SqlDataSource1.Insert();
-            Label1.Text = "suc ";
+            try
+            {
+                int rowsAffected2 = SqlDataSource1.Insert();
+                Label1.Text = "suc ";
+            }
+            catch(Exception ex) { Label1.Text = ex.Message; }
 
         }
     }
