@@ -17,6 +17,12 @@ namespace Ecommerce
                // Session["UserType"] = null;
 
             }
+
+        }
+
+        protected void Btn_Log() {
+            Session["UserName"] = null;
+
         }
     }
 }
