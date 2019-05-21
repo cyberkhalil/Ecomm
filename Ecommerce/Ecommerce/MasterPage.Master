@@ -29,6 +29,7 @@
 	<asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
 <body>
+	<form id="form1" runat="server">
 	<header id="header">
 		<!--header-->
 		<div class="header_top">
@@ -94,14 +95,17 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-8 clearfix">
+					<div class="col-md-8 clearfix" style="left: 0px; top: 0px">
 						<div class="shop-menu clearfix pull-right">
 							<ul class="nav navbar-nav">
 								<li><a href=""><i class="fa fa-user"></i>Account</a></li>
 								<li><a href=""><i class="fa fa-star"></i>Wishlist</a></li>
 								<li><a href="checkout.aspx"><i class="fa fa-crosshairs"></i>Checkout</a></li>
 								<li><a href="cart.aspx"><i class="fa fa-shopping-cart"></i>Cart</a></li>
-								<li><a href="../Admin/Login.aspx"><i class="fa fa-lock"></i>Login</a></li>
+								<li><a href="../Admin/Login.aspx"><i class="fa fa-lock"></i>
+                                    <asp:Label ID="Label1" runat="server" Text="Login" ></asp:Label>
+
+								    </a></li>
 							</ul>
 						</div>
 					</div>
@@ -122,6 +126,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
+                            <br />
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
@@ -294,7 +299,6 @@
 					<div class="col-sm-3 col-sm-offset-1">
 						<div class="single-widget">
 							<h2>About Shopper</h2>
-							<form action="#" class="searchform">
 								<input type="text" placeholder="Your email address" />
 								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
 								<p>
@@ -302,7 +306,6 @@
 									<br />
 									our site and be updated your self...
 								</p>
-							</form>
 						</div>
 					</div>
 				</div>
@@ -318,5 +321,6 @@
 		</div>
 	</footer>
 	<!--/Footer-->
+    </form>
 </body>
 </html>
