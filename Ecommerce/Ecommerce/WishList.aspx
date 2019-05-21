@@ -23,14 +23,15 @@
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSourceWish" ForeColor="#333333" GridLines="None">
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSourceWish" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="408px">
                         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                         <Columns>
-                            <asp:BoundField DataField="pro" HeaderText="pro" SortExpression="pro" />
-                            <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
-                            <asp:BoundField DataField="details" HeaderText="details" SortExpression="details" />
-                            <asp:BoundField DataField="pic" HeaderText="pic" SortExpression="pic" />
-                            <asp:BoundField DataField="edate" HeaderText="edate" SortExpression="edate" />
+                            <asp:BoundField DataField="pro" HeaderText="Product Name" SortExpression="pro" />
+                            <asp:BoundField DataField="details" HeaderText="Details" SortExpression="details" HtmlEncode="False" />
+                            <asp:BoundField DataField="price" HeaderText="Price" SortExpression="price" />
+                            <asp:BoundField DataField="edate" HeaderText="Date" SortExpression="edate" DataFormatString="{0:d}" />
+                            <asp:ImageField DataImageUrlField="pic" DataImageUrlFormatString="~\Assets\images\products\{0}" HeaderText="Photo">
+                            </asp:ImageField>
                         </Columns>
                         <EditRowStyle BackColor="#999999" />
                         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
