@@ -14,7 +14,8 @@
 
         .auto-style8 {
             height: 22px;
-        }
+        text-align: left;
+    }
 
         .auto-style9 {
             width: 147px;
@@ -23,14 +24,15 @@
 
         .auto-style10 {
             height: 23px;
-        }
+        text-align: left;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="nav-justified">
         <tr>
             <td class="auto-style6">Product Id</td>
-            <td>
+            <td class="text-left">
                 <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             </td>
         </tr>
@@ -42,13 +44,13 @@
         </tr>
         <tr>
             <td class="auto-style6">Product Name</td>
-            <td>
+            <td class="text-left">
                 <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style6">Product date</td>
-            <td>
+            <td class="text-left">
                 <br />
                 <asp:TextBox ID="TextBoxCalender" runat="server"></asp:TextBox>
                 <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="..." BackColor="#FFFF99" BorderColor="#FFFFCC" CssClass="btn active" />
@@ -76,13 +78,13 @@
         </tr>
         <tr>
             <td class="auto-style6">Product details</td>
-            <td>
-                <asp:TextBox ID="TextBox5" runat="server" Height="44px" TextMode="MultiLine" Width="402px"></asp:TextBox>
+            <td class="text-left">
+                <asp:TextBox ID="TextBox5" runat="server" Height="52px" TextMode="MultiLine" Width="353px"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style6">&nbsp;</td>
-            <td>
+            <td class="text-left">
                 <asp:Button ID="submit" runat="server" Text="submit" CssClass="btn btn-primary" OnClick="Submit_Click" />
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Products] WHERE [P_Id] = @P_Id" InsertCommand="INSERT INTO [Products] ([P_Id], [C_Id], [Name], [edate], [price], [pic], [details]) VALUES (@P_Id, @C_Id, @Name, @edate, @price, @pic, @details)" SelectCommand="SELECT * FROM [Products]" UpdateCommand="UPDATE [Products] SET [C_Id] = @C_Id, [Name] = @Name, [edate] = @edate, [price] = @price, [pic] = @pic, [details] = @details WHERE [P_Id] = @P_Id">
                     <DeleteParameters>

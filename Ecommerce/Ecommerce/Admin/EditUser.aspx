@@ -4,6 +4,10 @@
     .auto-style6 {
         height: 22px;
     }
+    .auto-style7 {
+        height: 22px;
+        text-align: left;
+    }
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -15,7 +19,7 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <td class="auto-style6"><strong>
+        <td class="auto-style7"><strong>
                 <asp:Label ID="Label3" runat="server" BorderColor="#000099" CssClass="auto-style7" ForeColor="#000099" Text="Search for User   " style="font-size: small"></asp:Label>
                 </strong>
             <asp:TextBox ID="TextBox1" runat="server" BorderColor="White" BorderStyle="Solid"  placeholder="search" AutoPostBack="True"></asp:TextBox>

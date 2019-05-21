@@ -13,6 +13,7 @@
         }
         .auto-style9 {
             width: 289px;
+            text-align: left;
         }
         .auto-style10 {
             height: 22px;
@@ -22,6 +23,15 @@
             height: 22px;
             width: 289px;
             text-align: right;
+        }
+    .auto-style12 {
+        padding-right: 35px;
+        text-align: left;
+    }
+        .auto-style13 {
+            height: 22px;
+            width: 289px;
+            text-align: left;
         }
     </style>
 </asp:Content>
@@ -35,25 +45,30 @@
                 </strong></td>
         </tr>
         <tr>
-            <td class="auto-style8"><strong>[C_Id]</strong></td>
-            <td class="auto-style6">
+            <td class="auto-style13"><strong>[C_Id]</strong></td>
+            <td class="auto-style10">
                 <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style9"><strong>CategoryName</strong></td>
-            <td>
+            <td class="text-left">
                 <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style11">
                 <div class="text-right">
-                    <asp:Button ID="Button1" runat="server" CssClass="btn-primary disabled active" OnClick="Button1_Click" Text="submit" />
                    
                     <!-- TODO   اعمل خيار انه ما يتفعل الزر الا لما ينضغط عليه بس ..  -->
                     <br />
                 </div>
+                <br />
+            </td>
+            <td class="auto-style10">
+                    <asp:Button ID="Button1" runat="server" CssClass="btn-primary disabled active" OnClick="Button1_Click" Text="submit" />
+                   
+                    <br />
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Categories] WHERE [C_Id] = @C_Id" InsertCommand="INSERT INTO [Categories] ([C_Id], [C_Name]) VALUES (@C_Id, @C_Name)" SelectCommand="SELECT * FROM [Categories]" UpdateCommand="UPDATE [Categories] SET [C_Name] = @C_Name WHERE [C_Id] = @C_Id">
                     <DeleteParameters>
                         <asp:Parameter Name="C_Id" Type="Int32" />
@@ -68,9 +83,7 @@
                     </UpdateParameters>
                 </asp:SqlDataSource>
                 <asp:Label ID="LabelMessage" runat="server"></asp:Label>
-                <br />
-            </td>
-            <td class="auto-style6">&nbsp;</td>
+                </td>
         </tr>
 
         <tr>
@@ -79,18 +92,20 @@
             <td class="auto-style6"></td>
         </tr>
         <tr>
-            <td class="auto-style8"><strong>
+            <td class="auto-style13"><strong>
                 <asp:Label ID="Label2" runat="server" BorderColor="#000099" CssClass="auto-style7" ForeColor="#000099" Text="EditCategory"></asp:Label>
                 </strong></td>
             <td class="auto-style6"></td>
         </tr><tr>
-            <td class="alert-dismissable" colspan="2">
+            <td class="auto-style12" colspan="2">
+                <div class="text-left">
                 <br />
                 <br />
                 Search Category
                 <asp:TextBox ID="TextBox3" runat="server" AutoPostBack="True" Height="23px" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
                 <br />
                 <br />
+                </div>
                 <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="10" DataKeyNames="C_Id" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" PageSize="4">
                     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                     <Columns>

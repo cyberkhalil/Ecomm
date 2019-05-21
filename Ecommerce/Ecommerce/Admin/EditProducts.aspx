@@ -7,6 +7,10 @@
         .auto-style7 {
             font-size: large;
         }
+        .auto-style8 {
+            font-size: large;
+            text-align: left;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -16,7 +20,7 @@
             <td class="auto-style6"></td>
         </tr>
         <tr>
-            <td class="auto-style7"><strong>
+            <td class="auto-style8"><strong>
                 <asp:Label ID="Label2" runat="server" BorderColor="#000099" CssClass="auto-style7" ForeColor="#000099" Text="Edit and Delete Products"></asp:Label>
                 <br />
                 </strong></td>

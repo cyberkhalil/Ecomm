@@ -34,8 +34,8 @@
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="Assets/images/home/girl2.jpg" class="girl img-responsive" alt="" />
-									<img src="Assets/images/home/pricing.png" class="pricing" alt="" />
+									<img src="Assets/images/products/download%20(3).jpg" class="girl img-responsive" alt="" />
+									<img src="Assets/images/products/images (1).jpg" class="pricing" alt="" />
 								</div>
 							</div>
 
