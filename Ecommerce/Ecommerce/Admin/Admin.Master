@@ -57,11 +57,13 @@
     </header>
     <!--/header_top-->
 
+    <form id="form1" runat="server">
+
     <div class="header-middle">
         <!--header-middle-->
         <div class="container">
             <div class="row">
-                <div class="col-md-4 clearfix">
+                <div class="text-right">
                     <div class="logo pull-left">
                         <a href="../Home.aspx">
                             <img src="/Assets/images/home/logo.png" alt="" /></a>
@@ -70,13 +72,13 @@
                         <div class="btn-group">
                         </div>
                     </div>
+                    <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="Logout" OnClick="ButtonLogout_Click" />
                 </div>
             </div>
         </div>
     </div>
     <!--/header-middle-->
 
-    <form id="form1" runat="server">
         <table class="nav-justified">
             <tr>
                 <td class="text-center">&nbsp;</td>

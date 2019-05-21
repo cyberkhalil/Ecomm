@@ -20,5 +20,10 @@ namespace Ecommerce.Admin
 
 
         }
+        protected void ButtonLogout_Click(object sender, EventArgs e)
+        {
+            Session["UserName"] = null;
+            Response.Redirect("login.aspx");
+        }
     }
 }
