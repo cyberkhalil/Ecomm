@@ -39,7 +39,7 @@
 				 <asp:CheckBox ID="CheckBoxLogin" runat="server" Text="Keep me signed in" CssClass="checkbox" />
 
 							</span>
-				  <asp:Button ID="ButtonLogin" runat="server" OnClick="ButtonLogin_Click" Text="تسجيل" Width="66px" CssClass="btn btn-default" />
+				  <asp:Button ID="ButtonLogin" runat="server" OnClick="ButtonLogin_Click" Text="Login" Width="66px" CssClass="btn btn-primary" />
 
 
 							 <asp:Label ID="LabelMessage" runat="server"></asp:Label>
@@ -65,7 +65,7 @@
 						 <asp:TextBox ID="TextBox2f2" runat="server" placeholder="phoneNumber"  Width="300px" Color="#696763" Font-Size="20px" margin-bottom="30px" ></asp:TextBox>
 						 <asp:TextBox ID="TextBox1fpass" runat="server" TextMode="Password" placeholder="Password"  Width="300px" Color="#696763" Font-Size="20px" margin-bottom="30px" OnTextChanged="TextBox1fpass_TextChanged"></asp:TextBox>
 
-						  <asp:Button ID="Button1" runat="server" OnClick="ButtonSignup_Click" Text="تسجيل" Width="66px" CssClass="btn btn-default" />
+						  <asp:Button ID="Button1" runat="server" OnClick="ButtonSignup_Click" Text="Signup" Width="66px" CssClass="btn btn-primary" />
 
 						<asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Users] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Users] ([Id], [Name], [Password], [phoneNumber], [Type], [Active]) VALUES (@Id, @Name, @Password, @phoneNumber, @Type, @Active)" SelectCommand="SELECT * FROM [Users]" UpdateCommand="UPDATE [Users] SET [Name] = @Name, [Password] = @Password, [phoneNumber] = @phoneNumber, [Type] = @Type, [Active] = @Active WHERE [Id] = @Id">
 							<DeleteParameters>

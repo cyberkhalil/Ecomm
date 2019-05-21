@@ -1,9 +1,7 @@
 TODO's :-
-* controll panel
-* add user name for Admin.Master message ("Hello user ..")
+* fix file upload on AddProduct.
 * Registration style in login page.
 * replace images.
-* upload img and format Calender date in AddAds page
 * implement addAd's page.
 * add AD's with images and so ...
 * distribute the ad's.
