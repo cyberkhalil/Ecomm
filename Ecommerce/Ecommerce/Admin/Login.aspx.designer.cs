@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Ecommerce.Admin {
-    
-    
-    public partial class Login {
-        
+namespace Ecommerce.Admin
+{
+    public partial class Login
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +20,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// TextBoxUserName control.
         /// </summary>
@@ -29,7 +29,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxUserName;
-        
+
         /// <summary>
         /// TextBoxPassword control.
         /// </summary>
@@ -38,7 +38,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxPassword;
-        
+
         /// <summary>
         /// CheckBoxLogin control.
         /// </summary>
@@ -47,7 +47,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CheckBoxLogin;
-        
+
         /// <summary>
         /// ButtonLogin control.
         /// </summary>
@@ -56,7 +56,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonLogin;
-        
+
         /// <summary>
         /// LabelMessage control.
         /// </summary>
@@ -65,7 +65,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelMessage;
-        
+
         /// <summary>
         /// SqlDataSource1 control.
         /// </summary>
@@ -74,7 +74,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-        
+
         /// <summary>
         /// TextBox1f control.
         /// </summary>
@@ -83,7 +83,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox1f;
-        
+
         /// <summary>
         /// TextBox2f2 control.
         /// </summary>
@@ -92,7 +92,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox2f2;
-        
+
         /// <summary>
         /// TextBox1fpass control.
         /// </summary>
@@ -101,7 +101,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox1fpass;
-        
+
         /// <summary>
         /// Button1 control.
         /// </summary>
@@ -110,7 +110,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
-        
+
         /// <summary>
         /// SqlDataSource2 control.
         /// </summary>
@@ -119,7 +119,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
-        
+
         /// <summary>
         /// LabelSignup control.
         /// </summary>

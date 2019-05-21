@@ -7,11 +7,4 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Ecommerce
-{
-
-
-    public partial class contact_us
-    {
-    }
-}
+namespace Ecommerce { public partial class contact_us { } }

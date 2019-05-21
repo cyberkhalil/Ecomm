@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Ecommerce.Admin {
-    
-    
-    public partial class Admin {
-        
+namespace Ecommerce.Admin
+{
+    public partial class Admin
+    {
+
         /// <summary>
         /// head control.
         /// </summary>
@@ -20,7 +20,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-        
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -29,7 +29,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// LabelUser control.
         /// </summary>
@@ -38,7 +38,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelUser;
-        
+
         /// <summary>
         /// MultiView1 control.
         /// </summary>
@@ -47,7 +47,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.MultiView MultiView1;
-        
+
         /// <summary>
         /// View1 control.
         /// </summary>
@@ -56,7 +56,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.View View1;
-        
+
         /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>

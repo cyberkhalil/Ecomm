@@ -7,11 +7,4 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Ecommerce
-{
-
-
-    public partial class checkout
-    {
-    }
-}
+namespace Ecommerce { public partial class checkout { } }

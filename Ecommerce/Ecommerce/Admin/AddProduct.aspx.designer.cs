@@ -9,8 +9,6 @@
 
 namespace Ecommerce.Admin
 {
-
-
     public partial class AddProduct
     {
 

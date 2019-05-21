@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="blog.aspx.cs" Inherits="Ecommerce.blog" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <header id="header"><!--header-->
+	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
 				<div class="row">
@@ -89,20 +89,20 @@
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a href="Home.aspx">Home</a></li>
 								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.aspx">Products</a></li>
+									<ul role="menu" class="sub-menu">
+										<li><a href="shop.aspx">Products</a></li>
 										<li><a href="product-details.aspx">Product Details</a></li> 
 										<li><a href="checkout.aspx">Checkout</a></li> 
 										<li><a href="cart.aspx">Cart</a></li> 
 										<li><a href="../Admin/login.aspx">Login</a></li> 
-                                    </ul>
-                                </li> 
+									</ul>
+								</li> 
 								<li class="dropdown"><a href="#" class="active">Blog<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.aspx" class="active">Blog List</a></li>
+									<ul role="menu" class="sub-menu">
+										<li><a href="blog.aspx" class="active">Blog List</a></li>
 										<li><a href="blog-single.aspx">Blog Single</a></li>
-                                    </ul>
-                                </li> 
+									</ul>
+								</li> 
 								<li><a href="404.aspx">404</a></li>
 								<li><a href="contact-us.aspx">Contact</a></li>
 							</ul>

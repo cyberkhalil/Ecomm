@@ -10,7 +10,8 @@ namespace Ecommerce.Admin
             {
                 Response.Redirect("Login.aspx");
             }
-            else {
+            else
+            {
                 LabelUser.Text = Session["UserName"].ToString();
 
                 MultiView1.ActiveViewIndex = 0;

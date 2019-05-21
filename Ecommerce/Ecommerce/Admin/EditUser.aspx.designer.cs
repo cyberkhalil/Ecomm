@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Ecommerce.Admin {
-    
-    
-    public partial class EditUser {
-        
+namespace Ecommerce.Admin
+{
+
+
+    public partial class EditUser
+    {
+
         /// <summary>
         /// Label2 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
-        
+
         /// <summary>
         /// Label3 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
-        
+
         /// <summary>
         /// TextBox1 control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
-        
+
         /// <summary>
         /// GridView1 control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace Ecommerce.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
-        
+
         /// <summary>
         /// SqlDataSource1 control.
         /// </summary>

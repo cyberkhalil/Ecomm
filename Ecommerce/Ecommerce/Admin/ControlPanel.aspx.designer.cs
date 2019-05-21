@@ -11,7 +11,5 @@ namespace Ecommerce.Admin
 {
 
 
-    public partial class ControlPanel
-    {
-    }
+    public partial class ControlPanel { }
 }
