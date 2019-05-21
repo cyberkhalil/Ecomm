@@ -5,22 +5,22 @@
 <html>
 <head runat="server">
     <title></title>
-    <link href="../Assets/css/animate.css" rel="stylesheet" />
-    <link href="../Assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../Assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="../Assets/css/main.css" rel="stylesheet" />
-    <link href="../Assets/css/prettyPhoto.css" rel="stylesheet" />
-    <link href="../Assets/css/price-range.css" rel="stylesheet" />
-    <link href="../Assets/css/responsive.css" rel="stylesheet" />
-    <script src="../Assets/js/bootstrap.min.js"></script>
-    <script src="../Assets/js/contact.js"></script>
-    <script src="../Assets/js/gmaps.js"></script>
-    <script src="../Assets/js/html5shiv.js"></script>
-    <script src="../Assets/js/jquery.js"></script>
-    <script src="../Assets/js/jquery.prettyPhoto.js"></script>
-    <script src="../Assets/js/jquery.scrollUp.min.js"></script>
-    <script src="../Assets/js/main.js"></script>
-    <script src="../Assets/js/price-range.js"></script>
+    <link href="/Assets/css/animate.css" rel="stylesheet" />
+    <link href="/Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/Assets/css/main.css" rel="stylesheet" />
+    <link href="/Assets/css/prettyPhoto.css" rel="stylesheet" />
+    <link href="/Assets/css/price-range.css" rel="stylesheet" />
+    <link href="/Assets/css/responsive.css" rel="stylesheet" />
+    <script src="/Assets/js/bootstrap.min.js"></script>
+    <script src="/Assets/js/contact.js"></script>
+    <script src="/Assets/js/gmaps.js"></script>
+    <script src="/Assets/js/html5shiv.js"></script>
+    <script src="/Assets/js/jquery.js"></script>
+    <script src="/Assets/js/jquery.prettyPhoto.js"></script>
+    <script src="/Assets/js/jquery.scrollUp.min.js"></script>
+    <script src="/Assets/js/main.js"></script>
+    <script src="/Assets/js/price-range.js"></script>
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -34,10 +34,7 @@
             font-size: small;
         }
 
-        .auto-style5 {
-            width: 214px;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <header id="header">
@@ -82,31 +79,32 @@
     <form id="form1" runat="server">
         <table class="nav-justified">
             <tr>
-                <td colspan="2"><strong><span class="auto-style4">you are login with</span></strong><span class="auto-style4"><strong> </strong></span><strong>
+                <td class="text-center">&nbsp;</td>
+                <td class="text-center">
+    <strong>Welcome </strong></span><strong>
                     <asp:Label ID="LabelUser" runat="server" CssClass="auto-style4"></asp:Label>
-                    &nbsp;<br />
-                    <br />
                     </strong></td>
+                <td class="text-center">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">
+                <td class="text-center">&nbsp;</td>
+                <td class="text-center">
                     <asp:MultiView ID="MultiView1" runat="server">
                         <asp:View ID="View1" runat="server">
                             <div class="text-left">
-                                <a href="AddProduct.aspx">Add Product</a><br /> <a href="EditUser.aspx">Edit User</a><br /> <a href="EditAndAddCategories.aspx.aspx">Add and Edit Categories</a><br /> <a href="EditProducts.aspx">Edit&nbsp; Product</a></div>
+                                <a href="AddProduct.aspx">Add Product</a><br /><a href="EditProducts.aspx">Edit&nbsp; Product</a><br /> <a href="EditUser.aspx">Edit User</a><br /> <a href="EditAndAddCategories.aspx.aspx">Add and Edit Categories</a><br /></div>
                         </asp:View>
                     </asp:MultiView>
-                </td>
-                <td>
-                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                    </asp:ContentPlaceHolder>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
+                    </td>
+                <td class="text-center"> <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder></td>
             </tr>
         </table>
+    <strong>
+       
+        </strong>
+                   
+
     </form>
 </body>
 </html>
