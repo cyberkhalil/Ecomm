@@ -35,8 +35,9 @@ namespace Ecommerce.Admin
 
             string ProductImgFile = strRealPath + FileUpload1.FileName;
             FileUpload1.SaveAs(strRealPath + FileUpload1.FileName);
+            // SqlDataSource1.InsertCommand = "INSERT INTO [Products] ([P_Id],[C_Id],[Name],[edate],[pic],[details]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + DateTime.Parse(TextBoxCalender.Text) + "','" + ProductImgFile + "','" + TextBox5.Text + "')";
 
-            SqlDataSource1.InsertCommand = "INSERT INTO [Products] ([P_Id],[C_Id],[Name],[edate],[pic],[details]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + DateTime.Parse(TextBoxCalender.Text) + "','" + ProductImgFile + "','" + TextBox5.Text + "')";
+            SqlDataSource1.InsertCommand = "INSERT INTO [Products] ([P_Id],[C_Id],[Name],[pic],[details]) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + ProductImgFile + "','" + TextBox5.Text + "')";
             try
             {
                 int rowsAffected1 = SqlDataSource1.Insert();
