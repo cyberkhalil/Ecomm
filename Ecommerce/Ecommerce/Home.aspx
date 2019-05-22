@@ -109,7 +109,7 @@
                         <asp:Label ID="detailsLabel" runat="server" Text='<%# Eval("details") %>' />
                         <br />
                         <br />
-                        <asp:Image ID="Image1" runat="server" Height="16px" ImageUrl='<%# "~\Assets\images\products\"+Eval("pic") %>' />
+                        <asp:Image ID="Image1" runat="server" Height="160px" ImageUrl='<%# "~\\Assets\\images\\products\\"+Eval("pic") %>' />
                         <br />
                     </ItemTemplate>
                     <SelectedItemStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
